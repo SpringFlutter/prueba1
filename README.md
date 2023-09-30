@@ -18,8 +18,8 @@ Extraccion de los datos
 List any prerequisites or dependencies that need to be installed before running the code.
 
 ### Fuente de datos
-
-Provide step-by-step instructions on how to install and set up your project. Include any configuration files or environment variables that need to be set.
+La fuente de datos a utilizar sera la proporcionada por API Gob.Ec la cual contiene datos que se generan en las instituciones públicas.
+Mayor informacion y metodos de uso las encuentra en el siguiente enlace: https://www.gob.ec/api
 
 ## Codigo
 
