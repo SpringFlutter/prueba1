@@ -9,7 +9,7 @@ Extraccion de los datos
   - [Requerimientos](#requerimientos)
   - [Fuente de datos](#fuente-de-datos)
   - [Codigo](#codigo)
-  - [Contributing](#contributing)
+  - [Uso](#uso)
   - [License](#license)
   - [Acknowledgments](#acknowledgments)
 
@@ -67,18 +67,13 @@ Parte 2: en este bloque almacenamos los datos obtenidos en una base datos mongod
     client.close()
 ```
 
-## Contributing
+## Uso
+Instalar las librerias necesarias
+```python
+pip install -r requirements.txt
+```
+Correr el codigo
 
-Explain how others can contribute to your project, such as guidelines for submitting pull requests and reporting issues. Include information on your preferred code style and any coding standards to follow.
-
-## License
-
-Specify the license under which your code is distributed. If you're unsure, you can include a link to the [Choose a License](https://choosealicense.com/) website to help users choose an appropriate license.
-
-## Acknowledgments
-
-Give credit to any individuals, libraries, or resources that were helpful or inspirational during the development of your project.
-
----
-
-Feel free to customize this template to fit your specific project. Once you've created your README file, save it as `README.md` in your GitHub repository, and it will automatically be displayed on your repository's main page.
+```python
+python3 prueba.py
+```
