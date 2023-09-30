@@ -2,8 +2,8 @@ import requests
 import json
 import pymongo
 
-# Institucion finaciera 118 (ARCOTEL)
-url = 'https://www.gob.ec/api/v1/instituciones'#/118'
+# Institucion finaciera
+url = 'https://www.gob.ec/api/v1/instituciones'
 headers = {'User-agent': 'Chrome/58.0.3029.110'}
 
 # Realizar una solicitud GET
