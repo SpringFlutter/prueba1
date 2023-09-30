@@ -23,8 +23,28 @@ Provide step-by-step instructions on how to install and set up your project. Inc
 
 ## Codigo
 
-Explain how to use your code. Provide examples and usage scenarios if applicable. Include code snippets or screenshots if helpful.
+```python
+    url = 'https://www.gob.ec/api/v1/instituciones'
+    headers = {'User-agent': 'Chrome/58.0.3029.110'}
 
+    # Realizar una solicitud GET
+    response = requests.get(url=url, headers=headers)
+
+    # Verificar si la solicitud fue exitosa (código de respuesta 200)
+    if response.status_code == 200:
+        # Convertir la respuesta a formato JSON
+        data = response.json()
+
+        primer_resultado = data[0]
+
+        for resultado in data:
+            # Iterar a través de las claves (campos) en el objeto
+            for campo, valor in primer_resultado.items():
+                # Imprimir el nombre del campo y su valor
+                print(f"{campo}: {valor}")
+
+    else:
+        print(f'Error al hacer la solicitud. Código de respuesta: {response.status_code}')
 ## Contributing
 
 Explain how others can contribute to your project, such as guidelines for submitting pull requests and reporting issues. Include information on your preferred code style and any coding standards to follow.
