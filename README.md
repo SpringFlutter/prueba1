@@ -15,7 +15,7 @@ Extraccion de los datos
 
 ### Requerimientos
 
-List any prerequisites or dependencies that need to be installed before running the code.
+Las librerias necesarias se encuentran en el archivo requirements.txt.
 
 ### Fuente de datos
 La fuente de datos a utilizar sera la proporcionada por API Gob.Ec, la cual contiene datos que se generan en las instituciones públicas del ecuador.
