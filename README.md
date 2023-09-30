@@ -22,7 +22,7 @@ List any prerequisites or dependencies that need to be installed before running 
 Provide step-by-step instructions on how to install and set up your project. Include any configuration files or environment variables that need to be set.
 
 ## Codigo
-
+En este bloque de codigo realizamos un solicitud GET para obtener los datos de las instituciones finacieras
 ```python
     url = 'https://www.gob.ec/api/v1/instituciones'
     headers = {'User-agent': 'Chrome/58.0.3029.110'}
@@ -45,6 +45,7 @@ Provide step-by-step instructions on how to install and set up your project. Inc
 
     else:
         print(f'Error al hacer la solicitud. Código de respuesta: {response.status_code}')
+```
 ## Contributing
 
 Explain how others can contribute to your project, such as guidelines for submitting pull requests and reporting issues. Include information on your preferred code style and any coding standards to follow.
