@@ -22,7 +22,8 @@ List any prerequisites or dependencies that need to be installed before running 
 Provide step-by-step instructions on how to install and set up your project. Include any configuration files or environment variables that need to be set.
 
 ## Codigo
-En este bloque de codigo realizamos un solicitud GET para obtener los datos de las instituciones finacieras
+
+Parte 1 : en este bloque de codigo realizamos un solicitud GET para obtener los datos de las instituciones finacieras
 ```python
     url = 'https://www.gob.ec/api/v1/instituciones'
     headers = {'User-agent': 'Chrome/58.0.3029.110'}
@@ -46,6 +47,26 @@ En este bloque de codigo realizamos un solicitud GET para obtener los datos de l
     else:
         print(f'Error al hacer la solicitud. Código de respuesta: {response.status_code}')
 ```
+Parte 2: en este bloque almacenamos los datos obtenidos en una base datos mongodb en la nube
+```python
+    # Cadena de conexion a la base de datos en la nube
+    connection_string = "mongodb+srv://projectspring85:prueba123@cluster0.xqrsb1a.mongodb.net/?retryWrites=true&w=majority"
+
+    # Se abre una conexion a la base de datos dbDatos en la coleccion docInstitucion
+    client = pymongo.MongoClient(connection_string)
+    db = client["dbDatos"]
+    collection = db["docInstitucion"]
+
+    # Se insertan los datos
+    result = collection.insert_many(data)
+
+    # Se imprime los ID de documentos insertados
+    print("Documentos insertados IDs:", result.inserted_ids)
+
+    # Se cierra la conexion
+    client.close()
+```
+
 ## Contributing
 
 Explain how others can contribute to your project, such as guidelines for submitting pull requests and reporting issues. Include information on your preferred code style and any coding standards to follow.
