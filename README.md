@@ -47,7 +47,7 @@ Parte 1 : en este bloque de codigo realizamos un solicitud GET para obtener los 
     else:
         print(f'Error al hacer la solicitud. Código de respuesta: {response.status_code}')
 ```
-Resultado 1: imprime en json un arreglo de datos de las instituciones. Por ejemplo, este es el resultado del primer elemento.
+Resultado 1: imprime en json un arreglo de datos de las instituciones. Por ejemplo, este es el resultado del primer elemento que corresponde a la Institucion ACESS.
 ```json
 {
     "institucion_id": "131",
@@ -82,7 +82,10 @@ Parte 2: en este bloque almacenamos los datos obtenidos en una base datos mongod
     # Se cierra la conexion
     client.close()
 ```
-
+Resultado 2: Imprime los ids de los documentos insertados en la base. Por ejemplo:
+```json
+Documentos insertados IDs: [ObjectId('65174839920f46e0b537e27d'), ObjectId('65174839920f46e0b537e27e'), ... , ObjectId('65174839920f46e0b537e27f')]
+```
 ## Uso
 Instalar las librerias necesarias
 ```python
