@@ -15,7 +15,7 @@ Extraccion de los datos
 
 ### Requerimientos
 
-Las librerias necesarias se encuentran en el archivo requirements.txt.
+Las librerias necesarias se encuentran en el archivo requirements.txt. Ademas, se necesita tener una cuenta creada en mongo atlas con una base de datos para establecer la conexion.
 
 ### Fuente de datos
 La fuente de datos a utilizar sera la proporcionada por API Gob.Ec, la cual contiene datos que se generan en las instituciones públicas del ecuador.
@@ -46,6 +46,22 @@ Parte 1 : en este bloque de codigo realizamos un solicitud GET para obtener los 
 
     else:
         print(f'Error al hacer la solicitud. Código de respuesta: {response.status_code}')
+```
+Resultado 1: imprime en json un arreglo de datos de las instituciones. Por ejemplo, este es el resultado del primer elemento.
+```json
+{
+    "institucion_id": "131",
+    "institucion": "Agencia de Aseguramiento de la Calidad de los Servicios de Salud y Medicina Prepagada",
+    "siglas": "ACESS",
+    "logo": "https://www.gob.ec//sites/default/files/2020-01/logo%20acess-08.jpg",
+    "url": "https://www.gob.ec/acess",
+    "website": "http://www.acess.gob.ec/",
+    "tipo": "Ejecutiva",
+    "descripcion": "Vigilar y controlar la calidad de los servicios que brindan los prestadores de salud y las compañías que financien servicios de atención integral en salud prepagada y de las de seguros que oferten cobertura de seguros de asistencia médica, velando por la seguridad de los pacientes y usuarios a través de la regulación y aseguramiento de la calidad y bajo los enfoques de derechos de género, interculturalidad, generacional y bioético.",
+    "sector": "Social",
+    "modificado": "2022-09-15T08:41:06-0500",
+    "publicado": "Si"
+}
 ```
 Parte 2: en este bloque almacenamos los datos obtenidos en una base datos mongodb en la nube
 ```python
