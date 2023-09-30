@@ -2,34 +2,26 @@
 
 Extraccion de los datos
 
-## Table of Contents
+## Tabla de contenido
 
 - [Prueba 1](#project-title)
-  - [Tabla de contenido](#table-of-contents)
-  - [Requerimientos](#description)
-  - [Fuente de datos](#getting-started)
-  - [Codigo](#usage)
+  - [Tabla de contenido](#tabla-de-contenido)
+  - [Requerimientos](#requerimientos)
+  - [Fuente de datos](#fuente-de-datos)
+  - [Codigo](#codigo)
   - [Contributing](#contributing)
   - [License](#license)
   - [Acknowledgments](#acknowledgments)
 
-## Description
-
-Provide a detailed description of your project, including its purpose and any relevant background information.
-
-## Getting Started
-
-Explain how to get your project up and running.
-
-### Prerequisites
+### Requerimientos
 
 List any prerequisites or dependencies that need to be installed before running the code.
 
-### Installation
+### Fuente de datos
 
 Provide step-by-step instructions on how to install and set up your project. Include any configuration files or environment variables that need to be set.
 
-## Usage
+## Codigo
 
 Explain how to use your code. Provide examples and usage scenarios if applicable. Include code snippets or screenshots if helpful.
 
