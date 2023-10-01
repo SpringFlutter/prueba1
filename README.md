@@ -96,3 +96,4 @@ Correr el codigo
 ```python
 python3 prueba.py
 ```
+Ademas se puede ver el ejercicio completo con resultados en el archivo prueba.ipynb
